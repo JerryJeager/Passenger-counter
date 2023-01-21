@@ -21,6 +21,8 @@ h1{
     color: #6C63FF;
     font-size: 1.7rem;
     font-family: 'Ubuntu', sans-serif;
+    position: fixed;
+    font-weight: 900;
 }
 .fa-sack-dollar{
     color: #6C63FF;
@@ -32,18 +34,15 @@ h1{
 }
 nav{
     display: flex;
-    /* align-self: flex-end; */
 }
 .profit-details{
-    /* right: 0; */
     transition: .4s;
     transform: translateX(60%);
     position: fixed;
     top: 0;
     transition: .4s;
-    /* transform: translateX(-60%); */
     height: 100vh;
-    width: 55vw;
+    width: 75vw;
     z-index: 5;
     background-color: white;
     border-bottom-left-radius: 70px;
@@ -51,5 +50,59 @@ nav{
 .hide-profit-details{
     transition: .4s;
     transform: translateX(-60%);
-    
+}
+.passenger-counter-details{
+    width: 90%;
+    margin: 9rem auto;
+}
+h2{
+    color: #6C63FF;
+    color: white;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.8rem;
+}
+.people-entered-num{
+    background-color: #6C63FF;
+    border-radius: 10px;
+    padding: 2em;
+    width: 70px;
+    height: 50px;
+    color: white;
+    margin: 2rem auto;
+    display: flex;
+    /* justify-self: center */
+}
+.increment-and-save{
+    width: 200px;
+    margin: 2rem auto;
+    /* border: 2px solid red; */
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.count-people{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background-color: #6C63FF;
+    color: white;
+    height: 40px;
+    border-radius: 6px;
+}
+.take-count{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.add-btn, .minus-btn{
+    align-self: center;
+}
+.fa-circle-plus{
+    font-size: 30px;
+    color: #ebc139;
+}
+.fa-circle-minus{
+    color: #a71e1e;
+    font-size: 30px;
 }
