@@ -53,6 +53,7 @@ nav{
 }
 .passenger-counter-details{
     width: 90%;
+    /* height: auto; */
     margin: 9rem auto;
 }
 h2{
@@ -65,12 +66,16 @@ h2{
 .people-entered-num{
     background-color: #6C63FF;
     border-radius: 10px;
-    padding: 2em;
+    padding: .7em;
     width: 70px;
     height: 50px;
     color: white;
     margin: 2rem auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 1.1rem;
+    font-family: 'Ubuntu', sans-serif;
     /* justify-self: center */
 }
 .increment-and-save{
@@ -92,7 +97,7 @@ h2{
     border-radius: 6px;
 }
 .take-count{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 700;
 }
 .add-btn, .minus-btn{
@@ -105,4 +110,16 @@ h2{
 .fa-circle-minus{
     color: #a71e1e;
     font-size: 30px;
+}
+.save-btn{
+    width: 200px;
+    margin: -.9rem auto;
+    background-color: #6C63FF;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding: .7em;
+    font-size: 1.1rem;
+    border-radius: 6px;
 }
