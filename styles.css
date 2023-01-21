@@ -122,4 +122,21 @@ h2{
     padding: .7em;
     font-size: 1.1rem;
     border-radius: 6px;
+    transition: .4s;
+}
+.save-btn:active, .save-btn:focus{
+    background-color: rgba(108, 99, 255, .8);
+}
+.passenger-entries{
+    width: 90%;
+    margin: -4rem auto;
+}
+.entries{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(60px, auto);
+}
+.entry{
+    width: 50px;
 }
