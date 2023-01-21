@@ -1,20 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&family=Ubuntu&display=swap');
+/* font-family: 'Overpass', sans-serif;
+   font-family: 'Ubuntu', sans-serif; */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 body{
-    /* height: 100vh; */
-    /* background-image: url('images/danfo2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left top;
-    -webkit-box-reflect: below; */
+    /* background-color: #eee; */
+    height: 100vh;
+    background:  linear-gradient(rgba(108, 99, 255, .3), rgba(108, 99, 255, .3)), url('images/undraw_bus_stop_re_h8ej.svg') center/cover no-repeat;
 }
-img{
-    width: 100%;
-    max-width: 100%;
-    height: 50vh;
-    -webkit-box-reflect: below 0 linear-gradient(transparent, white);
+header{
+    width: 90%;
+    margin: 2.6rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    color: #6C63FF;
+    font-size: 1.7rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.fa-sack-dollar{
+    color: #6C63FF;
+    font-size: 1.9rem;
+    margin-top: .35rem;
+}
+nav{
+    /* align-self: flex-end; */
 }
