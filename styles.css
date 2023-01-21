@@ -26,7 +26,26 @@ h1{
     color: #6C63FF;
     font-size: 1.9rem;
     margin-top: .35rem;
+    position: fixed;
+    right: 5%;
+    z-index: 7;
 }
 nav{
+    display: flex;
     /* align-self: flex-end; */
+}
+.profit-details{
+    /* right: 0; */
+    transition: .4s;
+}
+.hide-profit-details{
+    position: fixed;
+    top: 0;
+    transition: .4s;
+    transform: translateX(-60%);
+    height: 100vh;
+    width: 55vw;
+    z-index: 5;
+    background-color: white;
+    border-bottom-left-radius: 70px;
 }
