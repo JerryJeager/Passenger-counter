@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 body{
-    /* background-color: #eee; */
     height: 100vh;
     background:  linear-gradient(rgba(108, 99, 255, .3), rgba(108, 99, 255, .3)), url('images/undraw_bus_stop_re_h8ej.svg') center/cover no-repeat;
 }
@@ -35,6 +34,9 @@ h1{
 nav{
     display: flex;
 }
+.menu{
+    cursor: pointer;
+}
 .profit-details{
     transition: .4s;
     transform: translateX(60%);
@@ -42,10 +44,30 @@ nav{
     top: 0;
     transition: .4s;
     height: 100vh;
-    width: 75vw;
+    width: 100%;
     z-index: 5;
     background-color: white;
     border-bottom-left-radius: 70px;
+}
+.profit-details-content{
+    color: #6C63FF;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    padding-left: 2em;
+    text-align: left;
+    margin-top: 7em;
+}
+.rate + p{
+    margin-top: 2rem;
+}
+.total-entries-info{
+    margin-top: 1.6em;
+}
+.cashout{
+    margin-top: 2rem;
+}
+.fa-naira-sign{
+    color:rgba(17, 170, 55, 0.781);
 }
 .hide-profit-details{
     transition: .4s;
@@ -53,7 +75,6 @@ nav{
 }
 .passenger-counter-details{
     width: 90%;
-    /* height: auto; */
     margin: 9rem auto;
 }
 h2{
@@ -76,12 +97,10 @@ h2{
     align-items: center;
     font-weight: 1.1rem;
     font-family: 'Ubuntu', sans-serif;
-    /* justify-self: center */
 }
 .increment-and-save{
     width: 200px;
     margin: 2rem auto;
-    /* border: 2px solid red; */
     font-family: 'Overpass', sans-serif;
     display: flex;
     justify-content: space-between;
