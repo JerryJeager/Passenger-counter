@@ -5,12 +5,14 @@ const addBtn = document.querySelector(".add-btn")
 const minusBtn = document.querySelector(".minus-btn")
 const saveBtn = document.querySelector(".save-btn")
 const entries = document.querySelector(".entries")
+const rate = 100
 let passengerNum = 0
 let newPassengerValue = 0
 let passengerNumArr = []
 let totalCashArr = []
 let totalPassenger = 0
 let totalCash = 0
+
 
 menu.addEventListener("click", () => {
     profitDetails.classList.toggle("hide-profit-details")
@@ -35,7 +37,7 @@ saveBtn.addEventListener("click", () => {
         return
     entries.innerHTML += `<div class="people-entered-num entry">${passengerNum}</div>`
     passengerNumArr.push(passengerNum)
-    totalCashArr.push(passengerNum * 100)
+    totalCashArr.push(passengerNum * rate)
     calcEntries()
     passengerNum = 0
     displayPassengerNum()
